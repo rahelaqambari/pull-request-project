@@ -1,11 +1,12 @@
-import { Search, ShoppingBag, ShoppingCart, Sun } from "lucide-react";
+import { Menu, Search, ShoppingBag, ShoppingCart, Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Theme from "./Theme";
 
 function Header() {
   return (
-    <div className="w-full flex justify-between border-b bg-white/50 p-4 items-center gap-4">
+    <div className="w-full sticky top-0 left-0 flex justify-between border-b bg-white/50 p-4 items-center gap-4">
       <Link href="/">
         <Image
           src="/images/logo.png"
@@ -15,7 +16,7 @@ function Header() {
           priority={true}
         />
       </Link>
-      <div className="flex items-center gap-4">
+      <div className="md:flex hidden items-center gap-4">
         <Link className="uppercase hover:text-brand" href="/">
           Home
         </Link>
@@ -35,16 +36,21 @@ function Header() {
           Contact
         </Link>
       </div>
-      <div className="flex items-center gap-3">
+      <div className="md:flex hidden items-center gap-3">
         <div className="p-4 bg-stone-100 rounded-full group">
-          <Search className="group-hover:text-brand" />
+          <Search size={20} className="group-hover:text-brand" />
+        </div>
+        <div>
+          <Theme />
         </div>
         <div className="p-4 bg-stone-100 rounded-full group">
-          <Sun className="group-hover:text-brand" />
+          <ShoppingBag size={20} className="group-hover:text-brand" />
         </div>
-        <div className="p-4 bg-stone-100 rounded-full group">
-          <ShoppingBag className="group-hover:text-brand" />
-        </div>
+      </div>
+      {/* small screen header */}
+
+      <div className="md:hidden">
+        <Menu size={24} />
       </div>
     </div>
   );
