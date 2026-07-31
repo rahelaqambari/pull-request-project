@@ -8,6 +8,18 @@ function AddProduct() {
             <label htmlFor="Name">Name</label>
             <input type="text"  />
         </div>
+        <div>
+            <label htmlFor="price">price</label>
+            <input type="number"  />
+        </div>
+        <div>
+            <label htmlFor="brand">Brand</label>
+            <input type="text"  />
+        </div>
+        <div>
+            <label htmlFor="decription">Description</label>
+            <input type="text"  />
+        </div>
       </form>
     </div>
   )
