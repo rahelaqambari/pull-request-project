@@ -20,6 +20,7 @@ function AddProduct() {
             <label htmlFor="decription">Description</label>
             <input type="text"  />
         </div>
+        <button className='bg-green-600 py-4 px-7 rounded-md border border-white'>Add</button>
       </form>
     </div>
   )
