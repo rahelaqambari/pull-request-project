@@ -17,6 +17,14 @@ function AddProduct() {
             <input type="text"  />
         </div>
         <div>
+            <label htmlFor="category">Category</label>
+            <input type="text"  />
+        </div>
+        <div>
+            <label htmlFor="stock">Stock</label>
+            <input type="text"  />
+        </div>
+        <div>
             <label htmlFor="decription">Description</label>
             <input type="text"  />
         </div>
