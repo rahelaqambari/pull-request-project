@@ -12,7 +12,11 @@ function AllProducts() {
             <th>stock</th>
         </tr>
         <tr>
-            <td></td>
+            <td>Iphone 17 promax</td>
+            <td>$2000</td>
+            <td>Elicteric Devices</td>
+            <td>Apple</td>
+            <td>12</td>
         </tr>
       </table>
     </div>
